@@ -1,8 +1,21 @@
 @import 'libs/bootstrap-reboot.min';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+@font-face {
+    font-family: 'DIN_Pro';
+    src: url('../fonts/dinpro.otf') format('otf');
+    font-weight: normal;
+    font-style: sans-serif;
+}
+
+@font-face {
+    font-family: 'DIN_Pro';
+    src: url('../fonts/dinpro_bold.otf') format('otf');
+    font-weight: bold;
+    font-style: sans-serif;
+}
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'DIN_Pro', sans-serif;
     margin: 0;
     padding: 0;
 }
