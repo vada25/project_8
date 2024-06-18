@@ -1,4 +1,6 @@
 @import 'libs/bootstrap-reboot.min';
+@import 'base/variables';
+@import 'base/mixins';
 
 @font-face {
     font-family: 'DIN_Pro';
@@ -19,3 +21,17 @@
     margin: 0;
     padding: 0;
 }
+
+.container {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.divider {
+    height: 1px;
+    width: 180px;
+    background-color: $color-lt_text;
+    margin: 30px auto;
+}
+@import 'blocks/main_page/promo';
+@import 'base/title';
