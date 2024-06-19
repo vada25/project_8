@@ -142,7 +142,50 @@
         }
         &__page {
             margin: 0 auto;
+            position: relative;
+            &__galery {
+                
+                justify-content: center;
+                display: grid;
+                grid-template-row: repeat(2, 200px);
+                grid-template-columns: repeat(4, 224px);
+                gap: 30px;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    
+                }
+                div {
+                    position: relative;
+                }
+                &-item {
+                    
+                    &-1 {
+                        grid-row: 1 / 2;
+                        grid-column: 1 / 3;
+                    }
+                    &-4 {
+                        grid-row: 2 / 3;
+                        grid-column: 1 / 3;
+                    }
+                    &-5 {
+                        grid-row: 2 / 3;
+                        grid-column: 3 / 5;
+                    }
+                    &-descr {
+                        position: absolute;
+                        color: white !important;
+                        bottom: 0;
+                        left: 15px;
+                       
+                        
+                        
+                    }
+                }
+               
+            }
         }
-        
     }
 }
