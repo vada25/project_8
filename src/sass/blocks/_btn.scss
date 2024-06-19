@@ -1,0 +1,9 @@
+.btn {
+    background-color: $color-btn-dark;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    &__light {
+        background-color: $color-btn;
+    }
+}

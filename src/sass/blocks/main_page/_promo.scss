@@ -41,8 +41,108 @@
 
     &__right {
         width: 430px;
+        &__cart {
+            background-color: $color-bgd;
+            padding-top: 12px;
+            margin: 55px 100px 20px 40px;
+            text-align: center;
+            border-radius: 10px;
+            &__text {
+                padding-top: 10px;
+            }
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            
+        }
+        &__map {
+            margin: 20px 100px 0 40px;
+            position: relative;
+            background-color: $color-bgd;
+            z-index: -3;
+            &-pin {
+                position: absolute;
+                top: 170px;
+                left: 50%;
+                transform: translate(-50%);
+                @include before_circle;
+            }
+            &-chart {
+                position: relative;
+                z-index: -2;
+            } 
+       
+        }
+        .title {
+            &__fz24 {
+            margin-top: 40px;
+            text-align: center;
+            }
+            &__fz18 {
+                padding-top: 10px; 
+                padding-bottom: 10px;
+                text-align: center;
+            }
+        }
+           
+        
     }
     &__main {
         width: 1170px;
+        background-color: $color-bgd;
+        padding-top: 10px;
+        &__head {
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid;
+            border-color: $color-lt_text;
+            &__left {
+                width: 220px;
+                text-align: center;
+                border-right: 1px solid;
+                border-color: $color-lt_text;
+                &-tel {
+                    color: $color-btn;
+                    margin-top: 10px;
+                }
+                &-text_2 {
+                    color: $color-lt_text;
+                    font-size: 14px;
+                    img {
+                        padding-right: 5px;
+                    }
+                }
+            }
+            .title {
+                &__fz18 {
+                    color: black;
+                    margin: 0;  
+                }
+            }
+            &__mid {
+                align-self: center;
+                &__city {
+                    padding-left: 20px;
+
+                }
+            }
+            &__right {
+                margin-left: auto;
+                align-self: center;   
+                &-item {
+                    padding-right: 20px;
+                    text-decoration: none;
+                    &:hover {
+                        color: $color-btn;
+                    }
+                }            
+            }
+
+        }
+        &__page {
+            margin: 0 auto;
+        }
+        
     }
 }

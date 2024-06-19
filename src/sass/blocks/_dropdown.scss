@@ -1,0 +1,12 @@
+.dropdown {
+    width: 100px;
+    padding: 10px 15px;
+    background-color: unset;
+    border: none;
+    appearance: none;
+    &:hover {
+        cursor: pointer;
+    }
+    
+  
+}

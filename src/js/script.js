@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    $('.slick-slider').slick({
-      autoplay: true,
-      arrows: false,
-      
-    });
+  $('.carousel__inner').slick({
+    infinite: true,
+    slideToShow: 1,
+    slideToScroll: 3
   });
+});
