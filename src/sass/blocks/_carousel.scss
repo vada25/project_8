@@ -65,11 +65,13 @@
         left: auto;
     }
     .slick-slide {
+        display: block;
         margin: 0 10px;
         padding-bottom: 20px;
     }
     
     .slick-list {
+        max-height: 570px;
         margin-left: 80px;
         margin-right: 70px;
     }

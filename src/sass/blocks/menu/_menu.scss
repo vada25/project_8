@@ -14,7 +14,9 @@
         cursor: pointer;
         transition: 0.5s all;
         border-radius: 10px;
-        
+        &-active {
+            background-color: $color-btn-dark;
+        }
         &:hover {
             box-shadow: 3px 3px 20px $color-btn-dark;
             color: $color-lt_text;
@@ -23,7 +25,10 @@
         }
     }
     &__content {
-       
+        display: none;
+        &_active {
+            display: contents;
+            }
         &__wrapper {
             align-items: center;
             background-color: white;
