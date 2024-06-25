@@ -26,9 +26,13 @@ $(document).ready(function(){
       .closest('.menu').find('.menu__content').removeClass('menu__content_active').eq($(this).index()).addClass('menu__content_active')
   });
 
-  
+
   $('.order__descr__active').click(function() {
     $('.order__descr__expand').toggleClass('order__descr__expanded');
+  });
+
+  $(document).ready(function(){
+    $('#phone').mask('+380 (00) 000 00 00');
   });
 
 });

@@ -1,0 +1,47 @@
+.footer {
+    width: 1170px;
+    margin-left: 320px;
+    padding: 50px 80px 50px 90px;
+    background-color: $color-bgd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 2px solid;
+    border-color: $color-lt_text;
+    &__search {
+        ul {
+            list-style-type: none;
+            li {
+                margin-top: 20px;
+            }
+        }
+        a {
+            text-decoration: none;
+            
+        }
+    }
+    &__social {
+        margin-top: 20px;
+        color: $color-lt_text;
+        &__form input {
+            background-color: $color-bgd;
+            border: none;
+        }
+        &-icon {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 25px;
+        }
+        p {
+            margin-top: 15px;
+        }
+    }
+    &__contacts {
+        margin-top: 20px;
+        color: $color-lt_text;
+        &-info {
+            margin-top: 20px;
+        }
+    }
+       
+}

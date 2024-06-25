@@ -11,7 +11,9 @@
         &__active {
             display: block;
             left: 50%;
-            
+            color: $color-btn-dark;
+            padding-left: 50%;
+            transform: translate(-10%);
         }
         &__expanded {
             display: block;
@@ -23,6 +25,4 @@
     ul li {
         margin-left: 30px;
     }
-    
-
 }
