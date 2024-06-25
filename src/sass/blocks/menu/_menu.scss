@@ -3,11 +3,12 @@
     width: 1170px;
     height: 100%;
     padding-bottom: 50px;
-    margin-left: 320px;
+    margin-left: 0px;
     background-color: $color-bgd;
     &__tabs {
         list-style-type: none;
         display: flex; 
+        
         margin-left: 90px;  
     }
     &__tab {

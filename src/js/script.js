@@ -8,6 +8,8 @@ $(document).ready(function(){
       arrows: false,
       infinite: true,
   });
+
+  
   $('.carousel__bottom').slick({
       slidesToShow: 3,
       slidesToScroll: 2,
@@ -20,6 +22,7 @@ $(document).ready(function(){
       infinite: true,
   });
 
+
   $('ul.menu__tabs').on('click', 'li:not(.menu__tab_active)', function() {
     $(this)
       .addClass('menu__tab_active').siblings().removeClass('menu__tab_active')
@@ -31,8 +34,18 @@ $(document).ready(function(){
     $('.order__descr__expand').toggleClass('order__descr__expanded');
   });
 
+
   $(document).ready(function(){
     $('#phone').mask('+380 (00) 000 00 00');
   });
+
+
+  $('.item_set').on('click', function() {
+    // Hide the specified blocks
+    $('.carousel_top, .promo__main__page__galery').hide();
+
+    // Destroy slick slider in the specified block
+    $('.menu__content').slick('unslick');
+});
 
 });
