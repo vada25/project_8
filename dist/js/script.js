@@ -35,17 +35,32 @@ $(document).ready(function(){
   });
 
 
-  $(document).ready(function(){
-    $('#phone').mask('+380 (00) 000 00 00');
-  });
-
-
+  $('#phone').mask('+380 (00) 000 00 00');
+  
+  //menu page
+ 
   $('.item_set').on('click', function() {
     // Hide the specified blocks
-    $('.carousel_top, .promo__main__page__galery').hide();
+    $('.carousel_top, .promo__main__page__galery, .menu__tabs').hide();
 
     // Destroy slick slider in the specified block
     $('.menu__content').slick('unslick');
-});
+    // Add new class to the specified block
+    $('.menu__content').addClass('menu__content__list');
+  });
+
+  $('.menu__content__wrapper').on('click', function() {
+    var $clickedCard = $(this);
+    
+    
+    
+    var $productDetails = $('#menu__details');
+    var $productDetailsContent = $productDetails.find('.menu__details__content');
+    $productDetailsContent.html($clickedCard.html());
+    $('.carousel_top, .promo__main__page__galery, .menu__tabs, .menu__content__wrapper').hide();
+    $('.menu__content').slick('unslick');
+
+    $productDetails.show();
+  });
 
 });
