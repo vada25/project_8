@@ -51,9 +51,6 @@ $(document).ready(function(){
 
   $('.menu__content__wrapper').on('click', function() {
     var $clickedCard = $(this);
-    
-    
-    
     var $productDetails = $('#menu__details');
     var $productDetailsContent = $productDetails.find('.menu__details__content');
     $productDetailsContent.html($clickedCard.html());
